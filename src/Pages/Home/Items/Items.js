@@ -14,7 +14,7 @@ const Items = () => {
 
     return (
         <div>
-            <h1 className='items-title'>Inventory Items</h1>
+            <h1 className='items-title mt-5'>Inventory Items</h1>
             <div className="items-container">
                 {
                     items.map(item => <Item

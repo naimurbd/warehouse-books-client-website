@@ -1,7 +1,7 @@
 import React from 'react';
 import newArival1 from '../../../Images/New arrival/New -arrival1.png'
 import newArival2 from '../../../Images/New arrival/New-arrival2.png'
-import newArival3 from '../../../Images/New arrival/FB_IMG_1651250909499.jpg'
+import newArival3 from '../../../Images/New arrival/New-arrival3.jpg'
 import NewItem from '../NewItem/NewItem';
 
 const newItems = [
@@ -13,7 +13,7 @@ const newItems = [
 const NewItems = () => {
     return (
         <div className='container'>
-            <h2 className='text-info text-center'>New arrivals</h2>
+            <h2 className='text-info text-center mt-5'>New arrivals</h2>
             <div className="row">
                 {
                     newItems.map(newItem => <NewItem
