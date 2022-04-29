@@ -1,0 +1,44 @@
+[
+    {
+        "id": "6",
+        "name": "Chicken Roll",
+        "price": 250,
+        "description": "Chicken Roll is a popular street food in our country. Crisp, flaky parathas wrapped with a spicy chicken filling inside this food has Bengalis heart in it. Unlike many other roll varieties e.g. Egg Roll, Mutton Roll, this Roll also can be found in any of the street side eateries in our country. But from the last few years,I make it at my home.",
+        "img": "https://i.ibb.co/47vJ5Ly/chicken-wrap-doner-with-tomato-1.png"
+    },
+    {
+        "id": "7",
+        "name": "Pizza Party",
+        "price": 1500,
+        "description": "A pizza party is a social gathering at which pizza is served. Typically, a pizza that is 10 to 14 inches wide will feed two people. Our team serve this kind of on the party.We enjoy to serve and customer are very prised about us.",
+        "img": "https://i.ibb.co/PCkCSvk/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden-1-1.png"
+    },
+    {
+        "id": "8",
+        "name": "Burger",
+        "price": 840,
+        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
+        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png"
+    },
+    {
+        "id": "8",
+        "name": "Burger",
+        "price": 840,
+        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
+        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png"
+    },
+    {
+        "id": "8",
+        "name": "Burger",
+        "price": 840,
+        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
+        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png"
+    },
+    {
+        "id": "8",
+        "name": "Burger",
+        "price": 840,
+        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
+        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png"
+    }
+]
