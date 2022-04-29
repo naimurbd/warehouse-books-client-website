@@ -9,7 +9,7 @@ const Item = ({ item }) => {
             <h2>{name}</h2>
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
-            <button>Update</button>
+            <button className='btn btn-primary'>Update</button>
         </div>
     );
 };
