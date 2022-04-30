@@ -1,15 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Item.css'
 
 const Item = ({ item }) => {
-    const { name, img, description, price } = item;
+    const { id, name, img, description, price } = item;
+    const navigate = useNavigate();
+    const navigateToItemDetail = id => {
+        navigate(`/inventory/${id}`);
+    }
     return (
         <div className='item'>
             <img src={img} alt="" />
             <h2>{name}</h2>
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
-            <button className='btn btn-primary'>Update</button>
+            <button onClick={() => navigateToItemDetail(id)} className='btn btn-primary'>Update</button>
         </div>
     );
 };

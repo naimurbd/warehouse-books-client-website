@@ -12,7 +12,7 @@ const newItems = [
 
 const NewItems = () => {
     return (
-        <div className='container'>
+        <div id='arrivals' className='container'>
             <h2 className='text-info text-center mt-5'>New arrivals</h2>
             <div className="row">
                 {
