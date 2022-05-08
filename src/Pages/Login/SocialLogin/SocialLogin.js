@@ -1,6 +1,6 @@
 import React from 'react';
 import google from '../../../Images/Social/google.png';
-import github from '../../../Images/Social/github.png';
+
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
@@ -11,9 +11,9 @@ const SocialLogin = () => {
     let errorElement;
 
     if (error) {
-        errorElement = <div>
+        errorElement =
             <p className='text-danger'>Error: {error.message}</p>
-        </div>
+
 
     }
 
@@ -34,10 +34,7 @@ const SocialLogin = () => {
                     <img src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
-                <button className='btn btn-info w-50 mx-auto d-block'>
-                    <img src={github} alt="" />
-                    <span className='px-2'>Github Sign In</span>
-                </button>
+
             </div>
         </div>
     );
