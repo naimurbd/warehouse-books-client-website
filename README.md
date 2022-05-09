@@ -10,4 +10,4 @@
 <li>This website is related to multiple items warehouse/inventory management websites.</li>
 
 ###### list of technologies in my project:
-<li>This site made with firebase, firebase hooks, bootstrap, react bootstrap,react router, vanila css etc.</li>
+<li>This site made with firebase, firebase hooks, react firebase, bootstrap, react bootstrap,react router, vanila css etc.</li>
