@@ -1,9 +1,9 @@
 import React from 'react';
-import PopularBooks from '../../PopularBooks/PopularBooks';
 
 import Banner from '../Banner/Banner';
 import Items from '../Items/Items';
 import NewItems from '../NewItems/NewItems';
+import Feedbacks from './Feedbacks/Feedbacks';
 
 const Home = () => {
     return (
@@ -11,7 +11,11 @@ const Home = () => {
             <Banner></Banner>
             <Items></Items>
             <NewItems></NewItems>
-            <PopularBooks></PopularBooks>
+            <Feedbacks></Feedbacks>
+
+
+
+
 
         </>
     );
