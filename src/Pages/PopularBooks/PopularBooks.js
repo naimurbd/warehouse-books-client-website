@@ -2,7 +2,7 @@ import React from 'react';
 import popularBook1 from '../../Images/Popular Books/popular1.jpg'
 import popularBook2 from '../../Images/Popular Books/popular2.jpg'
 import popularBook3 from '../../Images/Popular Books/popular3.jpg'
-import PopularBook from '../PopularBook/PopularBook';
+import PopularBook from '../PopularBook/PopularBook'
 
 
 const popularBooks = [
