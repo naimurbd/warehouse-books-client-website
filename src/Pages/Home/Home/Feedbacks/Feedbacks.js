@@ -14,7 +14,7 @@ const feedbacks = [
 
 const Feedbacks = () => {
     return (
-        <div className='container' >
+        <div id='feedback' className='container' >
             <h2 className='text-secondary text-center mt-5'>Customers Feedback</h2>
             <div className="row">
                 {

@@ -1,56 +1,50 @@
 [
     {
-        "id": "6",
-        "name": "Chicken Roll",
+        "name": "Bristy Bilas ",
         "price": 250,
-        "description": "Chicken Roll is a popular street food in our country. Crisp, flaky parathas wrapped with a spicy chicken filling inside this food has Bengalis heart in it. Unlike many other roll varieties e.g. Egg Roll, Mutton Roll, this Roll also can be found in any of the street side eateries in our country. But from the last few years,I make it at my home.",
-        "img": "https://i.ibb.co/47vJ5Ly/chicken-wrap-doner-with-tomato-1.png",
-        "quantity": "",
-        "supplier name": "Jarif Khan"
+        "description": "This is one of the most common book in our inventory. This book sells a lot. And review of this book from the valuable customer is soo good..",
+        "img": "https://i.ibb.co/bFf23ZK/bristy-bilas.png",
+        "quantity": "55",
+        "supplier": "Humayun Publication"
     },
     {
-        "id": "7",
-        "name": "Pizza Party",
-        "price": 1500,
-        "description": "A pizza party is a social gathering at which pizza is served. Typically, a pizza that is 10 to 14 inches wide will feed two people. Our team serve this kind of on the party.We enjoy to serve and customer are very prised about us.",
-        "img": "https://i.ibb.co/PCkCSvk/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden-1-1.png",
-        "quantity": "",
-        "supplier name": "Tahsin Ahamed"
+        "name": "Kobor",
+        "price": 190,
+        "description": "This is an wonderful creation by author. Every character of this book is just awesome. For this reason customer like this book so much.",
+        "img": "https://i.ibb.co/3vnQcWh/kobor.png",
+        "quantity": "43",
+        "supplier": "Tahsin Publication"
     },
     {
-        "id": "8",
-        "name": "Burger",
+        "name": "Seser Kobita",
         "price": 840,
-        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
-        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png",
-        "quantity": "",
-        "supplier name": "Maruf Hossain"
+        "description": "Rabindranath wrote this book. Rabindra lover buy this book so much. For this our inventory reserve this product.",
+        "img": "https://i.ibb.co/V2bvkS8/seser-kobita.png",
+        "quantity": "80",
+        "supplier": "Rabindra Corner"
     },
     {
-        "id": "38",
-        "name": "Burger",
-        "price": 840,
-        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
-        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png",
-        "quantity": "",
-        "supplier name": "Mahfuz Morol"
+        "name": "Sultan Kahini",
+        "price": 540,
+        "description": "This is a wonderful story based book. Selling performance of this product is just awesome. This book sells so much in this month. ",
+        "img": "https://i.ibb.co/g7LQt9f/popular3.png",
+        "quantity": "77",
+        "supplier name": " Morol Publication"
     },
     {
-        "id": "28",
-        "name": "Burger",
-        "price": 840,
-        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
-        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png",
-        "quantity": "",
-        "supplier name": "Tahamaid Ahanaf"
+        "name": "Halal Binodon",
+        "price": 360,
+        "description": "Halal Binodon is a popular book. The young generation like this book so much.For this reason we stock this book.",
+        "img": "https://i.ibb.co/By424KC/popular2.png",
+        "quantity": "33",
+        "supplier name": "Ahanaf Publication"
     },
     {
-        "id": "18",
-        "name": "Burger",
+        "name": "Nazrul Somogro",
         "price": 840,
-        "description": "a Burger consisting of one or more cooked patties, placed inside a sliced bread roll or bun roll. minced beef used to make burgers. A burger consisting of steak.A burger made with plant-based meat substitute",
-        "img": "https://i.ibb.co/pzk30xk/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon-1.png",
-        "quantity": "",
-        "supplier name": "Jishan Usman"
+        "description": "Nozrul Somogro is one of the best book in our inventory. This book sells so much in every month. Customers like this product so much.",
+        "img": "https://i.ibb.co/GCGcNXt/nozrul.png",
+        "quantity": "120",
+        "supplier name": "Nazrul Publication"
     }
 ]

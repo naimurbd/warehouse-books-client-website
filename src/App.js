@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
+import AddItem from './Pages/AddItem/AddItem';
 
 import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
@@ -10,6 +11,7 @@ import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ManageItems from './Pages/ManageItems/ManageItems';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -28,6 +30,16 @@ function App() {
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+        <Route path="/additem" element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+        <Route path="/manage" element={
+          <RequireAuth>
+            <ManageItems></ManageItems>
           </RequireAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
