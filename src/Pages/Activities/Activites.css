@@ -1,4 +1,12 @@
-.activities-container {
-    display: flex;
-    justify-content: center;
-}
+ .accordion {
+     width: 100%;
+ }
+
+ /* .accordion-container img {
+     height: 71vh;
+ } */
+
+ .accordion-container {
+     display: flex;
+     justify-content: space-between;
+ }

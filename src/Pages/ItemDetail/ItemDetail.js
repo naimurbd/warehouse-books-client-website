@@ -5,6 +5,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ManageInventories from '../ManageInventories/ManageInventories';
+import './ItemDetail.css'
 
 
 const ItemDetail = () => {
@@ -17,7 +18,7 @@ const ItemDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
-    }, [])
+    }, [inventoryId])
 
     //handleDelivary decrease
 
@@ -44,30 +45,26 @@ const ItemDetail = () => {
         event.preventDefault();
         let inputFiled = event.target.number.value;
         console.log(inputFiled);
-
-
-
-        // let remaining = parseFloat(+item.quantity) + parseFloat(inputFiled);
-        // parseFloat(inputFiled);
-        // let newInventory = {
-        //     quantity: remaining,
-
-        // };
-
-        // setItem(newInventory);
-
-        fetch(`http://localhost:5000/item/${inventoryId}`, {
+        const newQuantity = item.quantity;
+        const newQuantityIncrease = parseInt(newQuantity) + parseInt(inputFiled);
+        console.log(newQuantityIncrease, 'newQuantity');
+        const updateItem = { newQuantityIncrease };
+        fetch(`http://localhost:5000/restockitem/${inventoryId}`, {
             method: "PUT",
-            body: JSON.stringify(inputFiled),
+
             headers: {
-                "content-type": "application/json",
+                "content-type": "application/json"
+
             },
+            body: JSON.stringify(updateItem)
         })
             .then((res) => res.json())
             .then((data) => {
-                event.target.reset()
-                console.log(data);
+                console.log('success', data);
+                setItem(data);
+                toast.success('This book restock successfully');
             });
+        event.target.reset()
     };
 
 
@@ -93,9 +90,12 @@ const ItemDetail = () => {
                     <br />
                     <button type="submit" className=' btn btn-primary mt-3'>Re Stock</button>
                 </form>
+                <ToastContainer />
 
             </div>
-            <Link className='text-primary mt-3 pe-auto text-decoration-none' to="/manageinventories" element={<ManageInventories></ManageInventories>}>Manage Inventories</Link>
+            <div className='item-btn'>
+                <Link className='text-primary mt-3 pe-auto text-decoration-none' to="/manageinventories" element={<ManageInventories></ManageInventories>}>Manage Inventories</Link>
+            </div>
         </div>
 
 
