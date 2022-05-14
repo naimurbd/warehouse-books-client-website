@@ -1,17 +1,20 @@
 import React from 'react';
+import Activities from '../../Activities/Activities';
+import Servicer from '../../Servicer/Servicer';
 
 import Banner from '../Banner/Banner';
 import Items from '../Items/Items';
-import NewItems from '../NewItems/NewItems';
-import Feedbacks from './Feedbacks/Feedbacks';
+
 
 const Home = () => {
     return (
         <>
+            <h1 className='text-center m-3 text-secondary'> Welcome TO WareHouse Books Corner</h1>
             <Banner></Banner>
             <Items></Items>
-            <NewItems></NewItems>
-            <Feedbacks></Feedbacks>
+            <Activities></Activities>
+            <Servicer></Servicer>
+
 
 
 

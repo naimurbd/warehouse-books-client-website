@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { Card } from "react-bootstrap";
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ManageInventories from '../ManageInventories/ManageInventories';
+
 
 const ItemDetail = () => {
     const { inventoryId } = useParams();
@@ -16,7 +19,7 @@ const ItemDetail = () => {
             .then(data => setItem(data));
     }, [])
 
-    //handleDelivary
+    //handleDelivary decrease
 
     const handleDelivered = async () => {
         await axios
@@ -34,6 +37,41 @@ const ItemDetail = () => {
             });
     };
 
+
+    //quantity increase
+
+    const handleStock = (event) => {
+        event.preventDefault();
+        let inputFiled = event.target.number.value;
+        console.log(inputFiled);
+
+
+
+        // let remaining = parseFloat(+item.quantity) + parseFloat(inputFiled);
+        // parseFloat(inputFiled);
+        // let newInventory = {
+        //     quantity: remaining,
+
+        // };
+
+        // setItem(newInventory);
+
+        fetch(`http://localhost:5000/item/${inventoryId}`, {
+            method: "PUT",
+            body: JSON.stringify(inputFiled),
+            headers: {
+                "content-type": "application/json",
+            },
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                event.target.reset()
+                console.log(data);
+            });
+    };
+
+
+
     return (
         <div className='text-center'>
             <img className='m-3 mt-5' src={item.img} alt="" />
@@ -48,10 +86,22 @@ const ItemDetail = () => {
 
 
                 <button onClick={handleDelivered} className='btn btn-primary'>Delivered</button>
-                {/* <ToastContainer />  */}
+                <ToastContainer />
+
+                <form onSubmit={handleStock} >
+                    <input className='mt-3' type="number" placeholder='ReStocked' name="number" required />{" "}
+                    <br />
+                    <button type="submit" className=' btn btn-primary mt-3'>Re Stock</button>
+                </form>
 
             </div>
+            <Link className='text-primary mt-3 pe-auto text-decoration-none' to="/manageinventories" element={<ManageInventories></ManageInventories>}>Manage Inventories</Link>
         </div>
+
+
+
+
+
     );
 };
 

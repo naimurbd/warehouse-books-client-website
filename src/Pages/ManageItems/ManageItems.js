@@ -21,15 +21,27 @@ const ManageItems = () => {
         }
     }
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Manage your services</h2>
-            {
-                items.map(item => <div key={item._id}>
-                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
+        <div>
+            <div className='w-50 mx-auto'>
+                <h2 className='text-center mt-3 text-info'>My Items</h2>
+                {
+                    items.map(item => <div className='item' key={item._id}>
 
-                </div>)
-            }
-        </div>
+                        <h5>
+                            <img className='m-3 mt-5' src={item.img} alt="" />
+                            <h6>ID: {item._id}</h6>
+                            <h2> {item.name}</h2>
+                            <p><small>{item.description}</small></p>
+                            <h6>Price: {item.price}</h6>
+                            <h6>Quantity: {item.quantity}</h6>
+                            <h5>Supplier: {item.supplier}</h5>
+
+                            <button className='btn btn-primary' onClick={() => handleDelete(item._id)}>Delet</button></h5>
+
+                    </div>)
+                }
+            </div>
+        </div >
     );
 };
 

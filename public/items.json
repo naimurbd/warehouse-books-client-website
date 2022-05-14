@@ -46,5 +46,37 @@
         "img": "https://i.ibb.co/GCGcNXt/nozrul.png",
         "quantity": "120",
         "supplier name": "Nazrul Publication"
+    },
+    {
+        "name": "Boka Box",
+        "price": 340,
+        "description": "This is an wonderful creation by author. Every character of this book is just awesome. For this reason customer like this book so much.",
+        "img": "https://i.ibb.co/VH3SLfS/New-arrival3.jpg",
+        "quantity": "30",
+        "supplier name": "Nazrul Publication"
+    },
+    {
+        "name": "Valo Hoye Jabo",
+        "price": 640,
+        "description": "Valo Hoye Jabo is one of the best book in our inventory. This book sells so much in every month. Customers like this product so much.",
+        "img": "https://i.ibb.co/JvtLZwk/New-arrival2.png",
+        "quantity": "120",
+        "supplier name": "Islamic Publication"
+    },
+    {
+        "name": "Ahoban",
+        "price": 540,
+        "description": "Ahoban is a popular book. The young generation like this book so much.For this reason we stock this book.",
+        "img": "https://i.ibb.co/Zcd1Trd/New-arrival1.png",
+        "quantity": "10",
+        "supplier name": "Science Publication"
+    },
+    {
+        "name": "Keyamot",
+        "price": 740,
+        "description": "Keyamot is one of the best book in our inventory. This book sells so much in every month. Customers like this product so much.",
+        "img": "https://i.ibb.co/wKR9Dmv/popular1.png",
+        "quantity": "20",
+        "supplier name": "Mahbub Publication"
     }
 ]
