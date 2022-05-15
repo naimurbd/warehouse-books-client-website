@@ -1,0 +1,14 @@
+.add-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+.add-form-container form {
+    padding: 20px;
+    width: 700px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}

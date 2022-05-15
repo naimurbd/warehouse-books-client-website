@@ -15,9 +15,9 @@ const Items = () => {
     }, [])
 
     return (
-        <div id='items' className='container'>
+        <div id='items' className='text-center container' >
             <h1 className='items-title m-5 '>Inventory Items</h1>
-            <div className="items-container">
+            <div className="items-container ">
                 {
                     items.slice(0, 6).map(item => <Item
                         key={item._id}
@@ -27,7 +27,7 @@ const Items = () => {
                     </Item>)
                 }
             </div>
-            <Link className='text-primary pe-auto mt-3 text-center text-decoration-none' to="/manageinventories" element={<ManageInventories></ManageInventories>}>Manage Inventories</Link>
+            <div className='mt-4 text-primary text-decoration-none'> <Link to="/manageinventories" element={<ManageInventories></ManageInventories>}>Manage Inventories</Link></div>
         </div>
     );
 };

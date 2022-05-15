@@ -20,7 +20,7 @@ const ManageInventories = () => {
 
 
     return (
-        <div id='items' className='container'>
+        <div id='items' className='container text-center'>
             <h1 className='items-title m-5 '>Inventory Items</h1>
             <div className="items-container">
                 {
@@ -33,7 +33,9 @@ const ManageInventories = () => {
 
                 }
             </div >
-            <Link className='text-primary m-5 pe-auto w-fit block mx-auto flex justify-center text-decoration-none' to="/additem" element={<AddItem></AddItem>}>Add Item</Link>
+            <div>
+                <Link className='text-primary m-5 pe-auto w-fit block mx-auto flex justify-center text-decoration-none' to="/additem" element={<AddItem></AddItem>}>Add Item</Link>
+            </div>
 
         </div >
     );

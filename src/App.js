@@ -23,9 +23,11 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path='/inventory/:inventoryId' element={<ItemDetail></ItemDetail>}></Route>
+        {/* <Route path='/inventory/:inventoryId' element={<ItemDetail></ItemDetail>}></Route> */}
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/additem" element={<AddItem></AddItem>}></Route>
+        <Route path="/myitems" element={<ManageItems></ManageItems>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/manageinventories" element={<ManageInventories></ManageInventories>}></Route>
@@ -34,16 +36,17 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
-        <Route path="/additem" element={
+        <Route path="/inventory/:inventoryId" element={
           <RequireAuth>
-            <AddItem></AddItem>
+            <ItemDetail></ItemDetail>
           </RequireAuth>
         }></Route>
+        {/* 
         <Route path="/myitems" element={
           <RequireAuth>
             <ManageItems></ManageItems>
           </RequireAuth>
-        }></Route>
+        }></Route> */}
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

@@ -13,7 +13,7 @@ const Header = () => {
     }
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
+            <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,7 +30,8 @@ const Header = () => {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             {
                                 user && <>
-                                    <Nav.Link as={Link} to="additem">Add</Nav.Link>
+                                    <Nav.Link as={Link} to="additem">Add Item</Nav.Link>
+                                    <Nav.Link as={Link} to="manageinventories">Manage Items</Nav.Link>
                                     <Nav.Link as={Link} to="myitems">My Items</Nav.Link>
                                 </>
 
