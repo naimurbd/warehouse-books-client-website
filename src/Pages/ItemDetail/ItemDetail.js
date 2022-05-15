@@ -13,7 +13,7 @@ const ItemDetail = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${inventoryId}`;
+        const url = `https://shielded-badlands-43873.herokuapp.com/item/${inventoryId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -24,7 +24,7 @@ const ItemDetail = () => {
 
     const handleDelivered = async () => {
         await axios
-            .put(`http://localhost:5000/item/${inventoryId}`, {
+            .put(`https://shielded-badlands-43873.herokuapp.com/item/${inventoryId}`, {
                 quantity: item.quantity - 1,
             })
             .then((response) => {
@@ -49,7 +49,7 @@ const ItemDetail = () => {
         const newQuantityIncrease = parseInt(newQuantity) + parseInt(inputFiled);
         console.log(newQuantityIncrease, 'newQuantity');
         const updateItem = { newQuantityIncrease };
-        fetch(`http://localhost:5000/restockitem/${inventoryId}`, {
+        fetch(`https://shielded-badlands-43873.herokuapp.com/restockitem/${inventoryId}`, {
             method: "PUT",
 
             headers: {
