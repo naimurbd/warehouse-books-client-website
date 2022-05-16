@@ -1,6 +1,6 @@
 ## Warehouse Books
 
-### Live Site: 
+### Live Site: https://bright-dasik-ef64d6.netlify.app/ 
 
 ###### Description:
 <li>In this site, there is home page where it has navbar,banner,items,new arrivals,popular books and footer.</li>
