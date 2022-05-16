@@ -5,7 +5,7 @@ import About from './Pages/About/About';
 import AddItem from './Pages/AddItem/AddItem';
 
 import Blogs from './Pages/Blogs/Blogs';
-import Checkout from './Pages/Checkout/Checkout/Checkout';
+
 import Home from './Pages/Home/Home/Home';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import Login from './Pages/Login/Login/Login';
@@ -31,11 +31,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/manageinventories" element={<ManageInventories></ManageInventories>}></Route>
-        <Route path="/checkout" element={
-          <RequireAuth>
-            <Checkout></Checkout>
-          </RequireAuth>
-        }></Route>
+
         <Route path="/inventory/:inventoryId" element={
           <RequireAuth>
             <ItemDetail></ItemDetail>
